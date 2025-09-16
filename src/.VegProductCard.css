@@ -1,0 +1,63 @@
+.veg-card {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 20px;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff;
+    transition: transform 0.2s ease;
+  }
+  
+  .veg-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .veg-card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .veg-card-body {
+    padding: 15px;
+  }
+  
+  .veg-card-title {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    color: #2e7d32;
+  }
+  
+  .veg-card-item {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .veg-card-description {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .veg-card-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #388e3c;
+    margin-bottom: 15px;
+  }
+  
+  .veg-card-button {
+    padding: 10px 15px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .veg-card-button:hover {
+    background-color: #388e3c;
+  }

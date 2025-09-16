@@ -1,0 +1,106 @@
+/* 🍗 Container - Full Width */
+.container {
+  width: 100% !important;     /* Force full width */
+  max-width: 100% !important; /* Remove Bootstrap limits */
+  padding: 20px;
+  background-color: #fff5f5;
+}
+
+/* 🧭 Header */
+.text-center.mb-4 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #2f37d3;
+}
+
+/* 🎠 Carousel */
+.carousel .carousel-item {
+  text-align: center;
+}
+
+.carousel img {
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.carousel h5 {
+  margin-top: 12px;
+  color: #d32f2f;
+  font-weight: 600;
+}
+
+/* 🛒 Product Cards */
+.card {
+  border: none;
+  border-radius: 12px;
+  transition: transform 0.2s ease;
+  background-color: #ffffff;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+/* 📦 Card Body */
+.card-body {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #be2727;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+/* 🛍️ Add to Cart Button */
+.card-body button {
+  padding: 8px 16px;
+  font-size: 1rem;
+  background-color: #ff4081;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.card-body button:hover {
+  background-color: #c62828;
+}
+
+/* 📄 Pagination */
+.pagination {
+  margin-top: 30px;
+}
+
+.pagination .btn {
+  min-width: 40px;
+  font-weight: 500;
+}
+
+.pagination .btn-primary {
+  background-color: #c62828;
+  border-color: #c62828;
+}
+
+.pagination .btn-outline-primary:hover {
+  background-color: #c62828;
+  color: white;
+}

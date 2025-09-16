@@ -1,0 +1,84 @@
+
+/* Ensure login form starts below navbar */
+.login-container {
+  margin-top: 80px; /* navbar space */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;   /* push to top */
+  min-height: calc(100vh - 80px);
+  padding-top: 60px;         /* adjust distance from top */
+}
+
+
+
+/* ===== Login Card ===== */
+.login-card {
+  background: #a0f0c4;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  transform: translateY(-40px); /* 👈 move card upward */
+}
+
+
+/* ===== Heading ===== */
+.login-card h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+/* ===== Input Fields ===== */
+.login-card input {
+  width: 100%;
+  padding: 10px 14px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border 0.3s ease;
+}
+
+.login-card input:focus {
+  border-color: #ed8fd1;
+  outline: none;
+  box-shadow: 0 0 4px rgba(237, 143, 209, 0.5);
+}
+
+/* ===== Error Message ===== */
+.error {
+  color: red;
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+/* ===== Submit Button ===== */
+.btn-submit {
+  width: 100%;
+  padding: 10px;
+  background: hsl(246, 95%, 38%);
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+.btn-submit:hover {
+  background: #d676b6;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 480px) {
+  .login-card {
+    padding: 1.5rem;
+    width: 90%;
+  }
+}

@@ -1,0 +1,74 @@
+/* 🌿 Full Width Container */
+/* 🌿 Full Width Container with Padding */
+.full-width-container {
+  width: 100vw;                /* Viewport width */
+  max-width: 100vw;            /* Prevent Bootstrap override */
+  margin: 0 auto;              /* Center horizontally if needed */
+  padding: 20px 40px;          /* Horizontal breathing room */
+  box-sizing: border-box;      /* Include padding in width */
+  background-color: #f0faff;
+}
+
+/* 🧭 Header */
+.text-center.mb-4 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* 🛒 Product Cards */
+.card {
+  width: 100%;                 /* Make each card take full width */
+  margin-bottom: 20px;         /* Add spacing between cards */
+  border: none;
+  border-radius: 12px;
+  transition: transform 0.2s ease;
+  background-color: #ffffff;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+  width: 100%;
+  height: 250px;               /* Taller image for wide layout */
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+/* 📦 Card Body + Button */
+.card-body {
+  padding: 16px;
+}
+
+.card-body button {
+  display: block;
+  width: 100%;                 /* Full-width button */
+  margin-top: 10px;
+  padding: 12px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.card-body button:hover {
+  background-color: #00bcd4;
+}
+
+/* 📄 Pagination */
+.pagination {
+  justify-content: center;     /* Center pagination controls */
+  margin-top: 20px;
+}
+
+.pagination .btn {
+  min-width: 40px;
+  font-weight: 500;
+}

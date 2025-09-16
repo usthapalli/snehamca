@@ -1,0 +1,136 @@
+/* 🌿 Container (Full Width Override) */
+.container {
+  width: 100% !important;     /* Always full width */
+  max-width: 100% !important; /* Override Bootstrap limits */
+  margin: 0 !important;       /* Remove auto-center */
+  padding: 20px;
+  background-color: #f5fff5;
+}
+
+/* 🧭 Header */
+.text-center.mb-4 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #4516f0;
+}
+
+/* 🎠 Carousel */
+.carousel .carousel-item {
+  text-align: center;
+}
+
+.carousel img {
+  height: 350px;
+  object-fit: cover; /* Keep carousel as full cover */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.carousel h5 {
+  margin-top: 12px;
+  color: #15b620;
+  font-weight: 600;
+}
+
+/* 🛒 Product Cards */
+.card {
+  border: none;
+  border-radius: 12px;
+  transition: transform 0.2s ease;
+  background-color: #ffffff;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* ✅ Fixed Product Card Image */
+.card-img-top {
+  max-height: 220px;          /* Flexible height */
+  width: 100%;                /* Fit card width */
+  object-fit: contain;        /* Show whole image without cutting */
+  background-color: #fff;     /* Clean background */
+  padding: 10px;              /* Space around image */
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 📦 Card Body */
+.card-body {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #388e3c;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* 🛍️ Add to Cart Button */
+.card-body button {
+  padding: 8px 16px;
+  font-size: 1rem;
+  background-color: #43a045;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.card-body button:hover {
+  background-color: #eb4fc9;
+}
+
+/* 📄 Pagination */
+.pagination {
+  margin-top: 30px;
+}
+
+.pagination .btn {
+  min-width: 40px;
+  font-weight: 500;
+}
+
+.pagination .btn-primary {
+  background-color: #4516f0;
+  border-color: #4516f0;
+}
+
+.pagination .btn-outline-primary:hover {
+  background-color: #4516f0;
+  color: white;
+}
+
+/* 🎈 Floating Balloon */
+.balloon {
+  position: fixed;
+  bottom: -50px;
+  width: 30px;
+  height: 40px;
+  background: radial-gradient(circle at 30% 30%, #ff4d4d, #cc0000);
+  border-radius: 50% 50% 50% 50%;
+  animation: floatUp 3s ease-out forwards;
+  z-index: 9999;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-600px);
+    opacity: 0;
+  }
+}
