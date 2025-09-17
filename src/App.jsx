@@ -13,7 +13,7 @@ import { GiChocolateBar } from 'react-icons/gi';
 // 🧩 Pages & Components
 import Home from './Home';
 import Veg from './Veg';
-import NonVeg from './Nonveg';
+import NonVeg from './NonVeg';
 import Chacolate from './Chacolate';
 import Milk from './Milk';
 import Signup from './Signup';
