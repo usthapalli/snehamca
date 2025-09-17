@@ -14,7 +14,7 @@ import { GiChocolateBar } from 'react-icons/gi';
 import Home from './Home';
 import Veg from './Veg';
 import NonVeg from './NonVeg';
-import Chacolate from './Chacolate';
+import Chocolate from './Chocolate'; // ✅ corrected import
 import Milk from './Milk';
 import Signup from './Signup';
 import Cart from './Cart';
@@ -92,10 +92,10 @@ function App() {
           <NavLink to="/veg"><FaCarrot /> Veg</NavLink>
           <NavLink to="/nonveg"><FaDrumstickBite /> NonVeg</NavLink>
           <NavLink to="/milk"><FaGlassWhiskey /> Milk</NavLink>
-          <NavLink to="/chacolate"><GiChocolateBar /> Chacolate</NavLink>
+          <NavLink to="/chocolate"><GiChocolateBar /> Chocolate</NavLink> {/* ✅ corrected route */}
           <NavLink to="/signup"><FaUserPlus /> Signup</NavLink>
           <NavLink to="/OrdersHistory"><FaClipboardList /> Orders</NavLink>
-          <NavLink to="/ContactUs"><FaEnvelope /> Contact</NavLink>
+          <NavLink to="/ContactUs"><FaEnvelope /> ContactUs</NavLink>
           <NavLink to="/About"><FaInfoCircle /> About</NavLink>
 
           {loggedInUser ? (
@@ -119,7 +119,7 @@ function App() {
           <Route path="/veg" element={<Veg />} />
           <Route path="/nonveg" element={<NonVeg />} />
           <Route path="/milk" element={<Milk />} />
-          <Route path="/chacolate" element={<Chacolate />} />
+          <Route path="/chocolate" element={<Chocolate />} /> {/* ✅ corrected route */}
           <Route path="/signup" element={<Signup />} />
           <Route path="/OrdersHistory" element={<OrdersHistory />} />
           <Route path="/About" element={<About />} />

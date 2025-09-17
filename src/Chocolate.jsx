@@ -10,7 +10,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import Swal from 'sweetalert2';
 import { launchBalloonBlast, floatBalloons } from './animation';
 
-function Chacolate() {
+function Chocolate() {
   const chocolateProducts = useSelector((state) => state.products.Chocolate);
   const dispatch = useDispatch();
 
@@ -128,4 +128,4 @@ function Chacolate() {
   );
 }
 
-export default Chacolate;
+export default Chocolate;
