@@ -107,7 +107,7 @@ function App() {
             <NavLink to="/Login"><FaUser /> Login</NavLink>
           )}
 
-          <NavLink to="/cart"><FaShoppingCart /> Cart ({cartCount})</NavLink>
+          <NavLink to="/Cart"><FaShoppingCart /> Cart ({cartCount})</NavLink>
         </nav>
       </header>
 
@@ -126,7 +126,7 @@ function App() {
           <Route path="/ContactUs" element={<ContactUs />} />
           <Route path="/Login" element={<Login />} />
           <Route
-            path="/cart"
+            path="/Cart"
             element={
               <div>
                 <Cart searchQuery={searchQuery} />
