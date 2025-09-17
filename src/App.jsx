@@ -1,15 +1,19 @@
+// 📦 Core & Routing
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Link, NavLink, Route, Routes, useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
+
+// 🎨 Icons
 import {
   FaHome, FaCarrot, FaDrumstickBite, FaGlassWhiskey, FaShoppingCart,
   FaInfoCircle, FaEnvelope, FaClipboardList, FaUserPlus, FaUser
 } from 'react-icons/fa';
 import { GiChocolateBar } from 'react-icons/gi';
 
+// 🧩 Pages & Components
 import Home from './Home';
-import Veg from './veg';
-import NonVeg from './nonveg';
+import Veg from './Veg';
+import NonVeg from './Nonveg';
 import Chacolate from './Chacolate';
 import Milk from './Milk';
 import Signup from './Signup';
@@ -20,44 +24,52 @@ import ContactUs from './ContactUs';
 import Login from './Login';
 import SearchResults from './SearchResults';
 
+// 🧼 Styles
 import './App.css';
 
 function App() {
-  const cartItems = useSelector((globalState) => globalState.cart);
+  const navigate = useNavigate();
+
+  // 🛒 Cart logic
+  const cartItems = useSelector((state) => state.cart);
   const cartCount = cartItems.reduce(
     (sum, item) => sum + (item.quantity || item.Quantity || 0),
     0
   );
 
-  const [searchQuery, setSearchQuery] = useState("");
+  // 🔍 Search & Auth
+  const [searchQuery, setSearchQuery] = useState('');
   const [loggedInUser, setLoggedInUser] = useState(null);
-  const navigate = useNavigate();
 
+  // 🧠 Effects
   useEffect(() => {
-    localStorage.setItem("cart", JSON.stringify(cartItems));
+    localStorage.setItem('cart', JSON.stringify(cartItems));
   }, [cartItems]);
 
   useEffect(() => {
-    const user = JSON.parse(localStorage.getItem("loggedInUser"));
+    const user = JSON.parse(localStorage.getItem('loggedInUser'));
     if (user) setLoggedInUser(user);
   }, []);
 
+  // 🔎 Search Handler
   const handleSearch = () => {
-    if (searchQuery.trim() === "") {
-      alert("Please enter something to search.");
+    if (!searchQuery.trim()) {
+      alert('Please enter something to search.');
       return;
     }
     navigate(`/search/${searchQuery}`);
   };
 
+  // 🚪 Logout Handler
   const handleLogout = () => {
-    localStorage.removeItem("loggedInUser");
+    localStorage.removeItem('loggedInUser');
     setLoggedInUser(null);
-    navigate("/login");
+    navigate('/login');
   };
 
   return (
     <>
+      {/* 🧭 Navigation Bar */}
       <header className="navbar">
         <div className="navbar-top">
           <Link to="/home" className="logo">
@@ -99,6 +111,7 @@ function App() {
         </nav>
       </header>
 
+      {/* 🧭 Routes */}
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -128,6 +141,7 @@ function App() {
   );
 }
 
+// 🌐 Wrap with Router
 export default function AppWrapper() {
   return (
     <BrowserRouter>
