@@ -14,10 +14,10 @@ import { GiChocolateBar } from 'react-icons/gi';
 import Home from './Home';
 import Veg from './Veg';
 import NonVeg from './NonVeg';
-import Chocolate from './Chocolate'; // ✅ corrected import
+import Chocolate from './Chocolate'; // ✅ Corrected spelling
 import Milk from './Milk';
 import Signup from './Signup';
-import Cart from './Cart';
+import Cart from './Cart'; // ✅ Ensure Cart.jsx exists and is correctly named
 import About from './About';
 import OrdersHistory from './OrdersHistory';
 import ContactUs from './ContactUs';
@@ -92,7 +92,7 @@ function App() {
           <NavLink to="/veg"><FaCarrot /> Veg</NavLink>
           <NavLink to="/nonveg"><FaDrumstickBite /> NonVeg</NavLink>
           <NavLink to="/milk"><FaGlassWhiskey /> Milk</NavLink>
-          <NavLink to="/chocolate"><GiChocolateBar /> Chocolate</NavLink> {/* ✅ corrected route */}
+          <NavLink to="/chocolate"><GiChocolateBar /> Chocolate</NavLink>
           <NavLink to="/signup"><FaUserPlus /> Signup</NavLink>
           <NavLink to="/OrdersHistory"><FaClipboardList /> Orders</NavLink>
           <NavLink to="/ContactUs"><FaEnvelope /> ContactUs</NavLink>
@@ -119,7 +119,7 @@ function App() {
           <Route path="/veg" element={<Veg />} />
           <Route path="/nonveg" element={<NonVeg />} />
           <Route path="/milk" element={<Milk />} />
-          <Route path="/chocolate" element={<Chocolate />} /> {/* ✅ corrected route */}
+          <Route path="/chocolate" element={<Chocolate />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/OrdersHistory" element={<OrdersHistory />} />
           <Route path="/About" element={<About />} />
