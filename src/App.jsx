@@ -24,7 +24,7 @@ import NonVeg from './NonVeg';
 import Chocolate from './Chocolate';
 import Milk from './Milk';
 import Signup from './Signup';
-import Cart from './Cart'; // ✅ Make sure Cart.jsx exists in src/
+import Cart from './Cart'; // ✅ Ensure Cart.jsx exists in src/
 import About from './About';
 import OrdersHistory from './OrdersHistory';
 import ContactUs from './ContactUs';
@@ -114,7 +114,7 @@ function App() {
             <NavLink to="/Login"><FaUser /> Login</NavLink>
           )}
 
-          <NavLink to="/Cart"><FaShoppingCart /> Cart ({cartCount})</NavLink>
+          <NavLink to="/cart"><FaShoppingCart /> Cart ({cartCount})</NavLink>
         </nav>
       </header>
 
@@ -133,7 +133,7 @@ function App() {
           <Route path="/ContactUs" element={<ContactUs />} />
           <Route path="/Login" element={<Login />} />
           <Route
-            path="/Cart"
+            path="/cart"
             element={
               <div>
                 <Cart searchQuery={searchQuery} />
