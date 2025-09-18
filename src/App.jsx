@@ -1,20 +1,9 @@
-// 📦 Core & Routing
 import React, { useState, useEffect } from 'react';
-import {
-  BrowserRouter,
-  Link,
-  NavLink,
-  Route,
-  Routes,
-  useNavigate
-} from 'react-router-dom';
+import { BrowserRouter, Link, NavLink, Route, Routes, useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
 // 🎨 Icons
-import {
-  FaHome, FaCarrot, FaDrumstickBite, FaGlassWhiskey, FaShoppingCart,
-  FaInfoCircle, FaEnvelope, FaClipboardList, FaUserPlus, FaUser
-} from 'react-icons/fa';
+import { FaHome, FaCarrot, FaDrumstickBite, FaGlassWhiskey, FaShoppingCart, FaInfoCircle, FaEnvelope, FaClipboardList, FaUserPlus, FaUser } from 'react-icons/fa';
 import { GiChocolateBar } from 'react-icons/gi';
 
 // 🧩 Pages & Components
@@ -24,7 +13,7 @@ import NonVeg from './NonVeg';
 import Chocolate from './Chocolate';
 import Milk from './Milk';
 import Signup from './Signup';
-import Cart from './Cart'; // ✅ Ensure Cart.jsx exists in src/
+import Cart from './Cart';  // ✅ Ensure Cart.jsx exists in src/
 import About from './About';
 import OrdersHistory from './OrdersHistory';
 import ContactUs from './ContactUs';
